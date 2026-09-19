@@ -1,0 +1,65 @@
+/* styles owned by section 02 */
+
+/* ---------- vocabulary trade-off figure ---------- */
+.vocab-sentence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 4px 0 14px;
+}
+.vocab-word {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--text);
+}
+.vocab-word.unknown {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  border: 1px dashed var(--line);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.vocab-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 4px;
+}
+.vocab-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.vocab-stat-n {
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.vocab-stat-l {
+  font-size: 12px;
+  color: var(--muted);
+  max-width: 150px;
+  line-height: 1.35;
+}
+
+/* ---------- merge builder figure ---------- */
+.mb-step { min-height: 0; }
+.mb-line {
+  font-size: 14.5px;
+  color: var(--dim);
+  line-height: 1.55;
+}
+.mb-sym { color: var(--text); }
+.mb-new { color: var(--accent-2); }
+.mb-chips {
+  margin-bottom: 12px;
+}
+.mb-empty {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--muted);
+}

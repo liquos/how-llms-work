@@ -1,0 +1,71 @@
+/* styles owned by section 18 */
+
+/* ---------- 18-Stack ---------- */
+.stack-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 4px 0 12px;
+}
+.stack-block {
+  fill: var(--panel-2);
+  stroke: var(--line-soft);
+  stroke-width: 0.5;
+}
+.stack-block.alt {
+  fill: rgba(106, 168, 255, 0.1);
+}
+.stack-tag {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
+  fill: var(--muted);
+}
+.stack-tag.accent {
+  fill: var(--accent-2);
+}
+.stack-leader {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+/* ---------- 18-WhatLayers ---------- */
+.wl-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.wl-row:last-child {
+  margin-bottom: 0;
+}
+.wl-name {
+  width: 116px;
+  flex: none;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dim);
+}
+.wl-track {
+  flex: 1;
+  height: 10px;
+  min-width: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+.wl-fill {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width 120ms linear;
+}
+.wl-pct {
+  width: 36px;
+  flex: none;
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}

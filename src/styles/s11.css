@@ -1,0 +1,57 @@
+/* styles owned by section 11 */
+
+.funnel { margin-top: 10px; }
+.funnel-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--dim);
+  max-height: 74px;
+  overflow: hidden;
+  padding: 8px 10px;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px 10px 0 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+.funnel-word { white-space: nowrap; }
+.funnel-narrow { width: 100%; height: 28px; }
+.funnel-narrow svg { width: 100%; height: 100%; display: block; }
+.funnel-narrow path { fill: rgba(255, 255, 255, 0.05); stroke: var(--line-soft); stroke-width: 1; }
+.funnel-vec {
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid var(--line-soft);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+.funnel-cell {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background: var(--accent);
+  flex: none;
+}
+
+.quality-plot { width: 100%; height: auto; display: block; margin-top: 10px; }
+.quality-plot .axis { stroke: var(--line); stroke-width: 1; }
+.quality-plot .q-marker { stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.quality-plot .q-curve { fill: none; stroke: var(--accent); stroke-width: 2; }
+.quality-plot .q-dot { fill: var(--accent-2); }
+
+.arith {
+  font-family: var(--mono);
+  font-size: 13.5px;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  padding: 12px 13px;
+  margin-top: 10px;
+  line-height: 1.6;
+  word-break: break-word;
+}

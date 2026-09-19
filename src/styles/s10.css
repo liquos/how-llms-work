@@ -1,0 +1,47 @@
+/* styles owned by section 10 */
+
+.lstm-plot { width: 100%; height: auto; display: block; margin-top: 10px; }
+.lstm-plot .axis { stroke: var(--line); stroke-width: 1; }
+.lstm-plot .ref-line { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
+.lstm-plot .curve { fill: none; stroke: var(--accent); stroke-width: 2; }
+.lstm-plot .curve-plain { fill: none; stroke: var(--warn); stroke-width: 2; stroke-dasharray: 4 3; }
+.lstm-plot .dot { fill: var(--accent-2); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+.legend .sw { display: inline-block; width: 14px; height: 2px; margin-right: 6px; vertical-align: middle; }
+.legend .sw.accent { background: var(--accent); }
+.legend .sw.warn { background: var(--warn); }
+.legend .sw.ref { background: var(--muted); }
+
+.arith {
+  font-family: var(--mono);
+  font-size: 13.5px;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  padding: 12px 13px;
+  margin-top: 10px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.gate-row { display: flex; gap: 8px; margin: 12px 0 0; }
+.gate-box {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  padding: 9px 4px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.gate-name {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.gate-val { font-family: var(--mono); font-size: 18px; color: var(--text); }

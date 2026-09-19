@@ -1,0 +1,40 @@
+/* styles owned by section 09 */
+
+.d9-plot {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 6px 0 10px;
+}
+.d9-baseline { stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.d9-line { stroke: var(--accent); stroke-width: 2; }
+.d9-markline { stroke: var(--warn); stroke-width: 1; stroke-dasharray: 2 3; opacity: 0.6; }
+.d9-mark { fill: var(--warn); }
+.d9-axis-label { font-family: var(--mono); font-size: 9px; fill: var(--muted); }
+
+.d9-readout {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--dim);
+  padding: 10px 13px;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 4px;
+}
+.d9-readout-val { color: var(--accent); font-size: 15px; }
+
+.ag9-sentence {
+  font-size: 15.5px;
+  line-height: 1.6;
+  padding: 12px 13px;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 12px;
+}
+.ag9-subject { color: var(--accent-2); font-weight: 600; }
+.ag9-filler { color: var(--muted); }
+.ag9-verb { color: var(--text); font-weight: 600; font-family: var(--mono); }

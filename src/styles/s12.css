@@ -1,0 +1,43 @@
+/* styles owned by section 12 */
+
+.align-row { display: flex; gap: 6px; margin-top: 10px; }
+.align-cell { flex: 1; min-width: 0; text-align: center; }
+.align-strip {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--line-soft);
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--text);
+  transition: opacity 150ms ease;
+}
+.align-word {
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.blend-svg { width: 100%; height: auto; display: block; margin-top: 6px; }
+.blend-link { stroke: var(--accent); stroke-width: 1.4; }
+.blend-src { fill: var(--panel-solid); stroke: var(--muted); stroke-width: 1.5; }
+.blend-out { fill: var(--accent-2); stroke: var(--bg); stroke-width: 2; }
+.blend-label { font-family: var(--mono); font-size: 10px; fill: var(--dim); }
+.blend-label.out { fill: var(--accent-2); font-weight: 600; }
+
+.arith {
+  font-family: var(--mono);
+  font-size: 13.5px;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  padding: 12px 13px;
+  margin-top: 10px;
+  line-height: 1.6;
+  word-break: break-word;
+}

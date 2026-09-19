@@ -1,0 +1,69 @@
+/* styles owned by section 20 */
+
+.patch-stage {
+  position: relative;
+  width: 100%;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  line-height: 0;
+}
+.scene-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+.patch-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.patch-overlay .grid-line {
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.patch-formula {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--dim);
+  line-height: 1.6;
+}
+.patch-formula b { color: var(--text); }
+
+.flatten-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.zoom-canvas {
+  width: 84px;
+  height: 84px;
+  flex: none;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  image-rendering: pixelated;
+}
+.flatten-arrow {
+  color: var(--muted);
+  font-size: 18px;
+  flex: none;
+}
+.pixel-grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 1px;
+  width: 128px;
+  flex: none;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+}
+.pixel-grid span {
+  display: block;
+  aspect-ratio: 1;
+}

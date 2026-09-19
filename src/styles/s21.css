@@ -1,0 +1,56 @@
+/* styles owned by section 21 */
+
+.sim-grid {
+  display: grid;
+  gap: 4px;
+  align-items: center;
+  margin-top: 4px;
+}
+.sim-cap {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+  text-align: center;
+  padding-bottom: 4px;
+  white-space: nowrap;
+}
+.sim-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dim);
+}
+.sim-cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--line-soft);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text);
+}
+.sim-cell.diag { border-color: var(--accent-line); }
+
+.shared-space {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, 0.02);
+  touch-action: none;
+}
+.ss-word {
+  font-family: var(--mono);
+  font-size: 9px;
+  fill: var(--dim);
+}
+.ss-icon { color: var(--muted); }
+.ss-link { stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.ss-nearest { fill: none; stroke: var(--accent-2); stroke-width: 1.5; }
+.ss-hit { fill: transparent; cursor: grab; }
+.ss-query {
+  fill: var(--accent);
+  filter: drop-shadow(0 0 6px rgba(106, 168, 255, 0.75));
+}

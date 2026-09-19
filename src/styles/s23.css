@@ -1,0 +1,59 @@
+/* styles owned by section 23 */
+
+.wave-svg {
+  width: 100%;
+  height: 44px;
+  display: block;
+}
+.wave-line { stroke: var(--accent); stroke-width: 1.3; }
+.wave-marker { stroke: var(--accent-2); stroke-width: 1; }
+
+.spectro-stage {
+  position: relative;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  line-height: 0;
+}
+.spectro-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  image-rendering: pixelated;
+}
+.spectro-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.spectro-overlay .grid-line {
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+.spectro-highlight {
+  fill: rgba(69, 220, 192, 0.28);
+  stroke: var(--accent-2);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.gen-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 3px;
+  margin: 4px 0 12px;
+  max-width: 220px;
+}
+.gen-grid span {
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 3px;
+  background: var(--panel-2);
+}
+.gen-grid span.blank {
+  border: 1px dashed var(--line);
+}

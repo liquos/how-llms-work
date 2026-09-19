@@ -1,0 +1,76 @@
+/* styles owned by section 16 */
+
+/* ---- 16-Shuffle ---- */
+.sh-seg { margin: 14px 0 4px; }
+.sh-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  margin-top: 10px;
+  table-layout: fixed;
+}
+.sh-table th,
+.sh-table td {
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--line-soft);
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+.sh-table th:first-child,
+.sh-table td:first-child {
+  width: 22%;
+}
+.sh-table th:not(:first-child),
+.sh-table td:not(:first-child) {
+  width: 39%;
+}
+.sh-table th {
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+.sh-table td.num { color: var(--dim); font-size: 10.5px; }
+.sh-table tr.changed td.num { color: var(--warn); }
+.sh-table tr.same td.num { color: var(--good); }
+.sh-tag {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+/* ---- 16-Positions ---- */
+.pg-wrap { overflow-x: auto; margin-top: 4px; }
+.pg-svg { width: 100%; max-width: 260px; height: auto; display: block; margin: 0 auto; }
+.pg-cell.pos { fill: var(--accent-2); }
+.pg-cell.neg { fill: var(--accent); }
+.pg-hi {
+  fill: none;
+  stroke: var(--accent-3);
+  stroke-width: 1.5;
+}
+.pg-sims { margin-top: 12px; display: flex; flex-direction: column; gap: 4px; }
+.pg-sim-row { display: flex; align-items: center; gap: 8px; }
+.pg-sim-n {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  width: 20px;
+  flex: none;
+  text-align: right;
+}
+.pg-sim-v {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dim);
+  width: 38px;
+  flex: none;
+  text-align: right;
+}

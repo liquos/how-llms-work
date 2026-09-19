@@ -1,0 +1,43 @@
+/* styles owned by section 06 */
+
+.logit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.logit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 11px;
+  border-radius: 8px;
+  border: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 13.5px;
+}
+.logit-row.top { border-color: var(--accent-line); background: var(--accent-glow); }
+.logit-t { color: var(--dim); }
+.logit-row.top .logit-t { color: var(--text); font-weight: 600; }
+.logit-s { color: var(--muted); }
+.logit-row.top .logit-s { color: var(--accent); }
+
+.logit-detail {
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 11px 13px;
+  margin-top: 12px;
+}
+.logit-sum {
+  font-size: 13px;
+  color: var(--dim);
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+.samp-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 4px 0 14px;
+}
+.samp-buttons .btn { flex: 1; }

@@ -1,0 +1,32 @@
+/* styles owned by section 22 */
+
+.wiring-chips { max-width: 100%; }
+.chip.img { border-color: rgba(198, 155, 255, 0.4); background: rgba(198, 155, 255, 0.12); }
+.chip.img .txt { color: var(--accent-3); }
+.chip.img .idx { color: var(--accent-3); }
+
+.wiring-flow { width: 100%; height: auto; display: block; margin-top: 8px; }
+.wiring-box { fill: var(--panel-2); stroke: var(--line); stroke-width: 1; }
+.wiring-line { stroke: var(--line); stroke-width: 1.4; }
+.wiring-label {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  fill: var(--dim);
+  letter-spacing: 0.02em;
+}
+.wiring-arrowhead { fill: var(--muted); }
+
+.xa-svg { width: 100%; height: auto; display: block; margin-top: 6px; }
+.xa-src { stroke-width: 1; fill: var(--panel-2); stroke: var(--line); }
+.xa-src.img { stroke: rgba(198, 155, 255, 0.5); }
+.xa-src.txt { stroke: var(--accent-line); }
+.xa-box { fill: var(--panel-2); stroke: var(--line); stroke-width: 1; }
+.xa-box.small { stroke: var(--accent-line); }
+.xa-t {
+  font-family: var(--mono);
+  font-size: 8px;
+  fill: var(--dim);
+}
+.xa-t.small { fill: var(--accent); }
+.xa-line { stroke: var(--line); stroke-width: 1.2; }
+.xa-line.dashed { stroke-dasharray: 3 3; }

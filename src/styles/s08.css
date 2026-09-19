@@ -1,0 +1,69 @@
+/* styles owned by section 08 */
+
+.u8-loop {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 4px;
+}
+.u8-box {
+  fill: var(--accent-glow);
+  stroke: var(--accent-line);
+  stroke-width: 1.3;
+}
+.u8-box-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  fill: var(--text);
+}
+.u8-selfarrow { stroke: var(--accent-2); stroke-width: 1.4; }
+.u8-arrowhead { fill: var(--accent-2); }
+.u8-inarrow { stroke: var(--line); stroke-width: 1.4; }
+.u8-loop-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  fill: var(--muted);
+}
+
+.u8-state-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 14px 0 8px;
+}
+.u8-bars {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+  height: 64px;
+}
+.u8-bar-track {
+  position: relative;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+.u8-bar-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #7fb5ff, #4d90f0);
+  border-radius: 3px;
+  transition: height 160ms ease, top 160ms ease, bottom 160ms ease;
+}
+
+.sw8-plot {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 6px 0 10px;
+}
+.sw8-zero { stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.sw8-line { stroke: var(--accent-2); stroke-width: 2; }
+.sw8-dot { fill: var(--accent-2); opacity: 0.55; }
+.sw8-dot-now { fill: var(--accent-2); opacity: 1; filter: drop-shadow(0 0 4px rgba(69,220,192,0.7)); }

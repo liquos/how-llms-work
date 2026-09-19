@@ -1,0 +1,155 @@
+/* styles owned by section 14 */
+
+.vplot {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2px 0 6px;
+  overflow: visible;
+}
+.vplot .axis { stroke: rgba(255, 255, 255, 0.09); stroke-width: 1; }
+
+.arr line { stroke-width: 2; stroke-linecap: round; }
+.arr text {
+  font-family: var(--mono);
+  font-size: 10px;
+  fill: var(--dim);
+}
+.arr.dim { opacity: 0.32; }
+.arr.e line, .arr.e polygon { stroke: var(--muted); fill: var(--muted); }
+.arr.q line, .arr.q polygon { stroke: var(--accent); fill: var(--accent); }
+.arr.k line, .arr.k polygon { stroke: var(--accent-3); fill: var(--accent-3); }
+.arr.v line, .arr.v polygon { stroke: var(--warn); fill: var(--warn); }
+.arr.out line, .arr.out polygon { stroke: var(--accent-2); fill: var(--accent-2); }
+.arr.out line { stroke-width: 2.6; }
+.arr.q text { fill: var(--accent); }
+.arr.k text { fill: var(--accent-3); }
+.arr.v text { fill: var(--warn); }
+.arr.out text { fill: var(--accent-2); }
+
+.perp { stroke: rgba(255, 255, 255, 0.34); stroke-width: 1.2; stroke-dasharray: 3 3; }
+.pdot circle { fill: var(--accent); }
+.pdot.out circle { fill: var(--accent-2); }
+
+/* three matrices and their results */
+.qkv-rows { margin-top: 4px; }
+.qkv-row {
+  display: grid;
+  grid-template-columns: 22px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 7px 0;
+  border-top: 1px solid var(--line-soft);
+  font-size: 12.5px;
+}
+.qkv-row.head {
+  border-top: none;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.qkv-name { font-family: var(--mono); font-weight: 600; }
+.qkv-name.q { color: var(--accent); }
+.qkv-name.k { color: var(--accent-3); }
+.qkv-name.v { color: var(--warn); }
+.qkv-mat { color: var(--muted); font-size: 11.5px; }
+.qkv-out { color: var(--text); font-size: 12.5px; }
+
+/* which token is asking */
+.tokpick { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.tokpick-b {
+  flex: 1;
+  min-width: 62px;
+  min-height: 40px;
+  padding: 0 8px;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 13px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.tokpick-b.on {
+  border-color: var(--accent-line);
+  background: var(--accent-glow);
+  color: var(--text);
+}
+
+/* the four scores */
+.scorelist { display: flex; flex-direction: column; gap: 5px; margin-top: 2px; }
+.scorerow {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 8px;
+  align-items: center;
+  min-height: 42px;
+  padding: 6px 10px;
+  border-radius: 9px;
+  border: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--muted);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.scorerow.on { border-color: var(--accent-line); background: var(--accent-glow); color: var(--text); }
+.sr-name { font-family: var(--mono); font-size: 12.5px; }
+.sr-calc { font-size: 10px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sr-val { font-size: 14px; color: var(--dim); }
+.scorerow.best .sr-val { color: var(--accent); }
+.scorerow.on .sr-name { color: var(--accent-3); }
+
+.wbars { display: flex; flex-direction: column; gap: 7px; margin: 10px 0 2px; }
+
+/* the attention grid */
+.amatrix {
+  display: grid;
+  grid-template-columns: 58px repeat(4, 1fr);
+  gap: 3px;
+  margin: 6px 0 4px;
+}
+.am-corner { }
+.am-col, .am-row {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+.am-col { justify-content: center; padding-bottom: 2px; }
+.am-row { justify-content: flex-end; padding-right: 7px; }
+.am-cell {
+  aspect-ratio: 1.5 / 1;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: color-mix(in srgb, var(--accent) calc(var(--w) * 78%), rgba(255, 255, 255, 0.03));
+  transition: background 200ms ease;
+}
+.am-cell.off {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.03) 0 4px,
+    transparent 4px 8px
+  );
+}
+
+.eqn {
+  font-size: 14px;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 12px;
+  white-space: normal;
+  word-break: break-word;
+}
